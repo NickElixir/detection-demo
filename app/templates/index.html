@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>
+    You can upload your image for detection on this page.<br>
+    You can see detections from other users in Gallery.
+</p>
+<form method=post enctype=multipart/form-data>
+    <label>Image Input</label><br>
+    <input type=file name=file accept="image/jpeg,image/jpg, image/png,image/gif"><br>
+    <input type=submit value=Upload>
+</form>
+<p>
+    P.S. I tried to realise detection from webcam but now it can't send your photo to server for detection, but you can save your photo and send by this form.<br>
+    Sorry, I will fix it as soon as possible!
+</p>
+{% endblock %}

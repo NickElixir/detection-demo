@@ -59,6 +59,8 @@ def detect(path_to_input_image, save_as = None,
     draw_boxes(save_as, class_path, filtered_boxes, original_im, image)
     
     print('image with detections saved as: ', save_as)
+    #delete source
+    os.remove(path_to_input_image)
 
 if __name__ == "__main__":
     print(tf.__version__)

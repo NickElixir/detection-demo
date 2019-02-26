@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style.css">
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title></title>
+        {% endif %}
+    </head>
+    <body>
+        <header>
+            {% if title %}
+            <h1>{{ title }}</h1>
+            {% endif %}
+            {% if author %}
+            <h4>Author: {{ author.username }}</h4>
+            {% endif %}
+            {% if menu %}
+            <ul class="menu">
+                {% for anchor in menu %}
+                <li><a href="{{ anchor.link }}">{{ anchor.label }}</a></li>
+                {% endfor %}
+            </ul>    
+            {% endif %}    
+            </ul>
+        </header>
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <footer>
+            <p>Web demonstration of object detection project for <a href="https://dlschool.org">Deep Learning School</a></p>
+        </footer>
+    </body>
+</html>

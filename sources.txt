@@ -1,0 +1,6 @@
+HTML5 Web Camera Example
+https://www.webcodegeeks.com/html5/html5-web-camera-example/
+Захват изображения с камеры на javascript и сохранение на сервер
+http://py-my.ru/post/509e3150bbddbd2f44000006/
+Javascript: Отправка изображения на канвасе на сервер
+https://habr.com/ru/post/110305/

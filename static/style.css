@@ -1,0 +1,10 @@
+header {
+    text-align: center;
+}
+img, video, canvas {
+    width: 90%;
+    margin: 5%;
+}
+input, button {
+    margin: 0.5em
+}
