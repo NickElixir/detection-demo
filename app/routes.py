@@ -10,6 +10,7 @@ def is_image(filename):
     ext = ext.lower()
     if ext == 'jpg' or ext == 'png' or ext == 'jpeg' or ext == 'gif':
         return True
+    return False
 
 @app.route('/')
 @app.route('/index', methods=["POST", "GET"])
