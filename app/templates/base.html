@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="/static/style.css">
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
         {% if title %}
         <title>{{ title }}</title>
         {% else %}
@@ -10,7 +11,7 @@
     <body>
         <header>
             {% if title %}
-            <h1>{{ title }}</h1>
+            <h1><a href="/">{{ title }}</a></h1>
             {% endif %}
             {% if author %}
             <h4>Author: {{ author.username }}</h4>
@@ -29,7 +30,7 @@
             {% endblock %}
         </div>
         <footer>
-            <p>Web demonstration of object detection project for <a href="https://dlschool.org">Deep Learning School</a></p>
+            <p>Project "Web-Demo of Object Detection" for <a href="https://dlschool.org">Deep Learning School</a></p>
         </footer>
     </body>
 </html>
